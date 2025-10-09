@@ -9,7 +9,7 @@ let idade = Number(prompt('Idade:'));
 document.write('Nome:' + nome + '<br>Idade:' + idade);
 /*
 "Alert" para aparecer direto no navegador 
-ao inves de usar "console.los"
+ao inves de usar "console.log"
 "document" para tirar tudo do F12
 "<br>" para quebrar linha com document.write
 */
