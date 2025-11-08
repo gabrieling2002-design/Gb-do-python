@@ -3,56 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kimono Fight - Loja de Kimonos de Jiu-Jitsu</title>
+  <title>Kimono Fight - Domine o Tatame com Estilo</title>
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Ícones -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Animações -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- CSS Externo -->
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
-    .navbar { background-color: #000; }
-    .navbar-brand, .nav-link { color: #fff !important; }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1593032465171-bcab6c0f9b72?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
-      color: white; text-align: center; padding: 120px 0;
-    }
-    .hero h1 { font-size: 3rem; font-weight: 700; text-shadow: 2px 2px 5px #000; }
-    footer { background-color: #000; color: #fff; text-align: center; padding: 20px 0; margin-top: 50px; }
-  </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Kimono Fight</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
-        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-      </ul>
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="index.html">
+          <i class="bi bi-fire"></i> Kimono Fight
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+  <main>
+
+    <!-- HERO -->
+    <section class="hero d-flex align-items-center justify-content-center text-center">
+      <div class="container" data-aos="fade-up">
+        <h1>Domine o Tatame com Estilo</h1>
+        <p>Os melhores kimonos de Jiu-Jitsu do Brasil, feitos para campeões que não aceitam menos que a vitória.</p>
+        <a href="produtos.html" class="btn btn-hero mt-4">
+          <i class="bi bi-bag-fill me-2"></i> Ver Produtos
+        </a>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DESTAQUE -->
+    <section class="container my-5 text-center">
+      <h2 class="fw-bold mb-4" data-aos="fade-up">Kimonos de Alta Performance</h2>
+      <p class="lead" data-aos="fade-up" data-aos-delay="100">
+        Tecido premium, costura reforçada e design que une conforto e durabilidade.
+        Seja para treino ou competição, temos o kimono certo para você.
+      </p>
+
+      <div class="row mt-5">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card product-card shadow-sm">
+            <img src="img/kimono preto.png" alt="Kimono Premium">
+            <div class="card-body">
+              <h5>Kimono Premium Pro</h5>
+              <p class="text-muted">Ideal para competidores de elite. Leve, resistente e estiloso.</p>
+              <a href="produtos.html" class="btn w-100"><i class="bi bi-eye"></i> Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card product-card shadow-sm">
+            <img src="img/kimono shadow.png" alt="Kimono Elite">
+            <div class="card-body">
+              <h5>Kimono Elite X</h5>
+              <p class="text-muted">Construído com tecido ultra leve e corte ergonômico.</p>
+              <a href="produtos.html" class="btn w-100"><i class="bi bi-eye"></i> Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card product-card shadow-sm">
+            <img src="img/kimono vermelho.png" alt="Kimono Training">
+            <div class="card-body">
+              <h5>Kimono Training Flex</h5>
+              <p class="text-muted">Feito para treinos intensos, máxima mobilidade e conforto.</p>
+              <a href="produtos.html" class="btn w-100"><i class="bi bi-eye"></i> Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE DIFERENCIAIS -->
+    <section class="bg-dark text-white py-5 text-center">
+      <div class="container">
+        <h2 class="fw-bold mb-4" data-aos="fade-up">Por que escolher a Kimono Fight?</h2>
+        <div class="row g-4 mt-4">
+          <div class="col-md-4" data-aos="fade-up">
+            <i class="bi bi-shield-check fs-1 mb-3 text-danger"></i>
+            <h5>Qualidade Garantida</h5>
+            <p class="text-light">Materiais testados por atletas profissionais para máximo desempenho.</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <i class="bi bi-lightning-charge fs-1 mb-3 text-danger"></i>
+            <h5>Tecnologia e Inovação</h5>
+            <p class="text-light">Nossos tecidos contam com tecnologia anti-odor e secagem rápida.</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-people fs-1 mb-3 text-danger"></i>
+            <h5>Para Todos os Lutadores</h5>
+            <p class="text-light">Modelos masculinos e femininos com corte anatômico e ajuste perfeito.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="text-center py-5">
+      <div class="container" data-aos="fade-up">
+        <h2 class="fw-bold mb-3">Pronto para elevar seu jogo?</h2>
+        <p class="lead mb-4">Garanta o kimono ideal e entre no tatame com confiança e estilo.</p>
+        <a href="produtos.html" class="btn btn-hero">
+          <i class="bi bi-cart4 me-2"></i> Comprar Agora
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BOTÃO WHATSAPP -->
+  <a href="https://wa.me/5599999999999" class="position-fixed bottom-0 end-0 m-4 btn btn-success rounded-circle shadow-lg" style="width:60px; height:60px; display:flex; align-items:center; justify-content:center; z-index:999;">
+    <i class="bi bi-whatsapp fs-3"></i>
+  </a>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container">
+      <div class="mb-3">
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-whatsapp fs-4"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-envelope fs-4"></i></a>
+      </div>
+      <p class="mb-0">© 2025 Kimono Fight | Desenvolvido com 💪 e Bootstrap</p>
     </div>
-  </div>
-</nav>
+  </footer>
 
-<section class="hero">
-  <div class="container">
-    <h1>Domine o Tatame com Estilo</h1>
-    <p>Os melhores kimonos de Jiu-Jitsu do Brasil.</p>
-    <a href="produtos.html" class="btn btn-light btn-lg mt-3">Ver Produtos</a>
-  </div>
-</section>
-
-<section class="container my-5 text-center">
-  <h2 class="fw-bold mb-4">Kimonos de Alta Performance</h2>
-  <p class="lead">Feitos com tecido premium, costura reforçada e design que une conforto e durabilidade.</p>
-</section>
-
-<footer>
-  <p>© 2025 Kimono Fight | Desenvolvido com 💪 e Bootstrap</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 900, once: true });
+  </script>
 </body>
 </html>
